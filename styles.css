@@ -45,6 +45,12 @@ nav{
     transition: color 0.3s ease;
 }
 
+.topnav a:hover{
+    color: rgba(229, 53, 30, 0.832);
+    transition: 0.3s ease;
+    transform: scale(1.01);
+}
+
 .logo{
     font-size: 5rem;
     font-weight: 800;
@@ -55,7 +61,15 @@ nav{
 }
 
 .logo:hover{
-    transform:scale(1.03);  
+    transform: scale(1.03);  
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem; 
+    padding: 5rem;
 }
 
 .home-content {
@@ -63,15 +77,30 @@ nav{
 }
 
 .home-img img {
+    position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 50%;
     justify-content: right;
+    padding: 50px;
+    box-shadow: 0 0 25px solid rgba(229, 53, 30, 0.832);
+    transition: 0.3s linear;
 }
 
 .home-content h1 {
     font-size: 4rem;
     font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0;
 }
 
 .social-icons a {
@@ -83,7 +112,7 @@ nav{
 }
 
 .social-icons a:hover {
-    color: rgba(229, 53, 30, 0.832);
+    color: rgba(229, 53, 30, 0.832); 
 }
 
 .btn {
