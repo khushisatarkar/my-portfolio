@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (charIndex === currentWord.length + 1) {
             isDeleting = true;
-            setTimeout(type, 2000); // Pause before deleting
+            setTimeout(type, 2000);  // pause before deleting
         } else if (charIndex === 0) {
             isDeleting = false;
             wordIndex = (wordIndex + 1) % words.length;
-            setTimeout(type, 500); // Pause before typing next word
+            setTimeout(type, 500);  // pause before typing next word
         } else {
-            setTimeout(type, isDeleting ? 100 : 75); // typing speed 75
+            setTimeout(type, isDeleting ? 100 : 75);  // typing speed 75
         }
     }
 
