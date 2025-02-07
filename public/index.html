@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khushi Satarkar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="../src/styles/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../src/styles/styles.css" />
     <script src="../src/scripts/main.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <h1 class="logo">Khushi</h1>
-            <div class="topnav">
-                <a href="#" class="active">Home</a>
-                <a href="#">Services</a>
-                <a href="#">Skills</a>
-                <a href="#">Education</a>            
-                <a href="#">Experience</a>
-                <a href="#">Contact</a>
-            </div>
-        </nav>
+      <nav>
+        <h1 class="logo">Khushi</h1>
+        <div class="topnav" id="mytopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
 
-        <section class="home">
-            <div class="home-img">
-                <img src="../src/assets/mypic.jpg" alt="My Picture">
-            </div>
-            <div class="home-content">
-                <h1>Hi, it's <span>Khushi</span></h1>
-                <h3 class="typing-text">I'm a <span class="red-box"></span></h3>
-                <p>Third Year Computer Engineering Student with hands-on experience using Java, HTML-CSS, JavaScript, Python, MySQL, MongoDB, C++. I am passionate about Software Development and Cybersecurity.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="#" class="btn">Hire Me</a>
-            </div>
-        </section>
+      <section class="home" id="home">
+        <div class="home-img">
+          <img src="../src/assets/mypic.jpg" alt="My Picture" />
+        </div>
+        <div class="home-content">
+          <h1>
+            Hi, it's <span>Khushi</span><span class="waving-hand">👋</span>
+          </h1>
+
+          <h3 class="typing-text">I'm a <span class="red-box"></span></h3>
+          <p>
+            Third Year Computer Engineering Student with hands-on experience
+            using Java, HTML-CSS, JavaScript, Python, MySQL, MongoDB, C++. I am
+            passionate about Software Development and Cybersecurity.
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/khushi-satarkar-039056254/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/khushisatarkar" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <a href="#" class="btn">Hire Me</a>
+        </div>
+      </section>
     </header>
-</body>
+
+    <section class="contact" id="contact">
+      <h1>Khushi Satarkar</h1>
+      <p>
+        <i class="fa-solid fa-envelope"></i> khushisatarkar24@gmail.com<br /><i
+          class="fa-solid fa-phone"
+        ></i>
+        +91 72489 23987
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </section>
+
+    <button id="scrollToTop" class="btn" title="Go to top">↑</button>
+  </body>
 </html>
