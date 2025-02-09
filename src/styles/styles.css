@@ -247,7 +247,9 @@ a.active {
   align-items: center;
   justify-content: center;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transform: translate(70%, 30%);
+  position: relative;
+  left: 30%;
+  top: 10%;
   gap: 2rem;
 }
 
@@ -262,4 +264,8 @@ a.active {
   font-size: 20px;
   font-weight: 400;
   text-align: center;
+}
+
+.contact-wrapper {
+  padding-bottom: 50px; 
 }
