@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="../src/styles/styles.css" />
-    <script src="../src/scripts/main.js" defer></script>
+    <script defer src="../src/scripts/main.js" defer></script>
   </head>
 
   <body>
@@ -17,12 +17,24 @@
       <nav>
         <h1 class="logo">🇰🇸</h1>
         <div class="topnav" id="mytopnav">
-          <a href="#home" class="active">Home</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">Contact</a>
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </div>
       </nav>
 
@@ -45,13 +57,19 @@
             <a
               href="https://www.linkedin.com/in/khushi-satarkar-039056254/"
               target="_blank"
-              ><i class="fa-brands fa-linkedin"></i>
+              ><i
+                class="fa-brands fa-linkedin"
+                title="Let's connect on Linkedin"
+              ></i>
             </a>
             <a href="https://github.com/khushisatarkar" target="_blank">
-              <i class="fa-brands fa-github"></i>
+              <i
+                class="fa-brands fa-github"
+                title="Let's connect on Github"
+              ></i>
             </a>
           </div>
-          <a href="#" class="btn">Hire Me</a>
+          <a href="#contact" class="btn">Hire Me</a>
         </div>
       </section>
     </header>
@@ -61,16 +79,29 @@
         <h1>Khushi Satarkar</h1>
         <p>
           <i class="fa-solid fa-envelope"></i> khushisatarkar24@gmail.com<br />
-          <i class="fa-solid fa-phone"> </i>
-          +91 72489 23987
+          <i class="fa-solid fa-phone"> </i>+91 72489 23987
         </p>
         <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a
+            href="https://www.linkedin.com/in/khushi-satarkar-039056254/"
+            target="_blank"
+          >
+            <i
+              class="fa-brands fa-linkedin"
+              title="Let's connect on Linkedin"
+            ></i
+          ></a>
+          <a href="https://github.com/khushisatarkar" target="_blank">
+            <i class="fa-brands fa-github" title="Let's connect on Github"></i
+          ></a>
         </div>
       </section>
     </div>
 
-    <button id="scrollToTop" class="btn" title="Go to top">↑</button>
+    <div class="skills-wrapper">
+      <section class="skills" id="skills"></section>
+    </div>
+
+    <button id="scrollToTop" class="btn2" title="Go to top">↑</button>
   </body>
 </html>
