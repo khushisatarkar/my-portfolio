@@ -37,8 +37,15 @@ nav {
   padding: 2rem 3rem;
 }
 
-li{
+ul{
   list-style: none;
+}
+
+.nav-link.active {
+  color: rgba(229, 53, 30, 0.832);
+  transition: 0.3s ease;
+  transform: scale(1.01);
+  border-bottom: 3px solid rgba(229, 53, 30, 0.832);
 }
 
 .topnav {
@@ -64,13 +71,9 @@ li{
   transform: scale(1.01);
   border-bottom: 3px solid rgba(229, 53, 30, 0.832);
 }
-
+/* 
 a.active {
-  color: rgba(229, 53, 30, 0.832);
-  transition: 0.3s ease;
-  transform: scale(1.01);
-  border-bottom: 3px solid rgba(229, 53, 30, 0.832);
-}
+} */
 
 .topnav a.active:hover {
   border-bottom: none;

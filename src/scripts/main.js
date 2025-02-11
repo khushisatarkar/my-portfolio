@@ -41,7 +41,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   type();
 
-  // Scroll-to-top button
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      navLinks.forEach((nav) => nav.classList.remove("active"));
+      this.classList.add("active");
+
+      // scroll smoothly to the target section
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // scroll to top btn
   const scrollToTopButton = document.getElementById("scrollToTop");
 
   window.addEventListener("scroll", () => {
@@ -59,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Scroll to top on page load
+  // scroll to top on refresh
   window.addEventListener("load", function () {
     setTimeout(() => {
       window.scrollTo(0, 0);
