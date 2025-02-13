@@ -37,7 +37,7 @@ nav {
   padding: 2rem 3rem;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -71,12 +71,10 @@ ul{
   transform: scale(1.01);
   border-bottom: 3px solid rgba(229, 53, 30, 0.832);
 }
-/* 
-a.active {
-} */
 
 .topnav a.active:hover {
   border-bottom: none;
+  border-bottom: 3px solid rgba(229, 53, 30, 0.832);
 }
 
 .logo {
@@ -112,14 +110,16 @@ a.active {
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
-  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out,  visibility 0s linear 0.5s;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out,
+    visibility 0s linear 0.5s;
 }
 
 #scrollToTop.show {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out,  visibility 0s linear;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out,
+    visibility 0s linear;
 }
 
 #scrollToTop:hover {
@@ -254,6 +254,57 @@ a.active {
   50% {
     border-color: rgba(229, 53, 30, 0.832);
   }
+}
+
+#skills {
+  padding: 30px 0;
+}
+
+#skills h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 20px;
+  padding-left: 15rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 14px;
+}
+
+.skills-list div{
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 2.5rem;
+}
+
+.skills-list div i{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.skills-list div h2{
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.skills-list div a{
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+.skills-list div a:hover{
+  color: rgba(229, 53, 30, 0.832);
+  cursor: pointer;
 }
 
 .contact {

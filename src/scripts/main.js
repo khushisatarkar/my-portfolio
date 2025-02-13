@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!text) return;
 
     const currentWord = words[wordIndex];
-    text.innerHTML = `<span class="highlight">${currentWord.slice(
+    text.innerHTML = `<span class="highlight" style="color: rgba(229, 53, 30, 0.832);">${currentWord.slice(
       0,
       charIndex
     )}</span>`;
