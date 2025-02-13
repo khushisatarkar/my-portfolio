@@ -265,6 +265,7 @@ ul {
   font-weight: 700;
   margin-top: 20px;
   padding-left: 15rem;
+  padding-top: 10rem;
 }
 
 .skills-list {
@@ -282,8 +283,13 @@ ul {
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
-  border-right: 10px;
   border-radius: 2.5rem;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.skills-list div:hover{
+  background-color: rgba(229, 53, 30, 0.832);
+  transform: translateY(-10px);
 }
 
 .skills-list div i{
@@ -300,10 +306,10 @@ ul {
 .skills-list div a{
   color: aliceblue;
   text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .skills-list div a:hover{
-  color: rgba(229, 53, 30, 0.832);
   cursor: pointer;
 }
 
@@ -313,9 +319,8 @@ ul {
   height: 400px;
   padding: 10px;
   flex-direction: column;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(229, 53, 30, 0.832);
-  border-radius: 5rem;
+  background: #262626;
+  border-radius: 2.5rem;
   align-items: center;
   justify-content: center;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -325,8 +330,16 @@ ul {
   gap: 2rem;
 }
 
-.contact h1 {
-  font-size: 2.4rem;
+#contact h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 20px;
+  padding-left: 15rem;
+  padding-top: 10rem;
+}
+
+.contact h2 {
+  font-size: 3rem;
   font-weight: 600;
   min-width: 280px;
   text-align: center;
@@ -336,6 +349,10 @@ ul {
   font-size: 20px;
   font-weight: 400;
   text-align: center;
+}
+
+.contact p i{
+  padding-right: 10px;
 }
 
 .contact-wrapper {
