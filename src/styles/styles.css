@@ -329,6 +329,7 @@ ul {
 #contact h1{
   font-size: 4rem;
   padding-left: 15rem;
+  padding-bottom: 3rem;
   font-weight: 700;
 }
 
@@ -338,6 +339,7 @@ ul {
 }
 
 #contact .social-icons{
+  padding-top: 3rem;
   padding-left: 15rem;
 }
 
@@ -358,16 +360,16 @@ ul {
 .contact-right form{
   width: 100%;
   padding-right: 15rem;
-  gap: 15px;
+  gap: 20px;
 }
 
 form input, form textarea{
   width: 100%;
-  border: none;
+  border: 1px solid rgba(229, 53, 30, 0.832);
   outline: none;
   background: #262626;
   padding: 15px;
-  margin: 15px;
+  margin: 0 0 15px 0;
   color: aliceblue;
   border-radius: 8px;
   font-size: 18px;
@@ -378,9 +380,10 @@ form textarea {
 }
 
 form .btn2{
-  padding: 14px 60px;
+  padding: 10px 60px;
   font-size: 18px;
   margin-top: 20px;
+  margin-bottom: 50px;
   cursor: pointer;
 }
 
