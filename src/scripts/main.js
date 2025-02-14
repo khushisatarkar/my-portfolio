@@ -1,4 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      let targetId = this.getAttribute("href").substring(1); 
+      let targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        if (targetId === "resume") {
+          targetSection.style.display = "block";
+        }
+
+        targetSection.scrollIntoView({ behavior: "smooth" });
+
+        document
+          .querySelectorAll(".nav-link")
+          .forEach((nav) => nav.classList.remove("active"));
+        this.classList.add("active");
+      }
+    });
+  });
+
   const text = document.querySelector(".red-box");
   const words = [
     "Frontend Developer",
@@ -80,6 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("load", function () {
     setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 0);
+    }, 100);
   });
 });

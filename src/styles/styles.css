@@ -13,7 +13,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-}   
+}
 
 body {
   width: 100%;
@@ -278,7 +278,7 @@ ul {
   font-size: 14px;
 }
 
-.skills-list div{
+.skills-list div {
   background: #262626;
   padding: 40px;
   font-size: 13px;
@@ -288,29 +288,29 @@ ul {
   transition: background 0.5s, transform 0.5s;
 }
 
-.skills-list div:hover{
+.skills-list div:hover {
   background-color: rgba(229, 53, 30, 0.832);
   transform: translateY(-10px);
 }
 
-.skills-list div i{
+.skills-list div i {
   font-size: 40px;
   margin-bottom: 30px;
 }
 
-.skills-list div h2{
+.skills-list div h2 {
   font-size: 26px;
   font-weight: 500;
   margin-bottom: 15px;
 }
 
-.skills-list div a{
+.skills-list div a {
   color: aliceblue;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
-.skills-list div a:hover{
+.skills-list div a:hover {
   cursor: pointer;
 }
 
@@ -322,48 +322,48 @@ ul {
   flex-wrap: wrap;
 }
 
-#contact .container{
+#contact .container {
   padding-top: 15rem;
 }
 
-#contact h1{
+#contact h1 {
   font-size: 4rem;
   padding-left: 15rem;
   padding-bottom: 3rem;
   font-weight: 700;
 }
 
-#contact p{
+#contact p {
   padding-left: 15rem;
   font-size: 20px;
 }
 
-#contact .social-icons{
+#contact .social-icons {
   padding-top: 3rem;
   padding-left: 15rem;
 }
 
-.contact-left{
+.contact-left {
   flex-basis: 35%;
 }
 
-.contact-right{
+.contact-right {
   flex-basis: 60%;
 }
 
-.contact-left p i{
+.contact-left p i {
   color: rgba(200, 40, 30, 0.832);
   margin-right: 15px;
 }
 
-
-.contact-right form{
+.contact-right form {
   width: 100%;
   padding-right: 15rem;
   gap: 20px;
 }
 
-form input, form textarea{
+form input,
+form textarea {
   width: 100%;
   border: 1px solid rgba(229, 53, 30, 0.832);
   outline: none;
@@ -376,10 +376,10 @@ form input, form textarea{
 }
 
 form textarea {
-  resize: vertical; 
+  resize: vertical;
 }
 
-form .btn2{
+form .btn2 {
   padding: 10px 60px;
   font-size: 18px;
   margin-top: 20px;
@@ -387,8 +387,7 @@ form .btn2{
   cursor: pointer;
 }
 
-
-.education h1{
+.education h1 {
   font-size: 4rem;
   font-weight: 700;
   margin-top: 20px;
@@ -396,8 +395,7 @@ form .btn2{
   padding-top: 10rem;
 }
 
-
-.timeline-items{
+.timeline-items {
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -405,7 +403,7 @@ form .btn2{
   position: relative;
 }
 
-.timeline-items::before{
+.timeline-items::before {
   content: "";
   position: absolute;
   width: 5px;
@@ -414,45 +412,45 @@ form .btn2{
   left: calc(50% - 1px);
 }
 
-.tl-item{
+.tl-item {
   margin-bottom: 40px;
   width: 100%;
   position: relative;
 }
 
-.tl-item:last-child{
+.tl-item:last-child {
   margin-bottom: 0;
 }
 
-.tl-item:nth-child(odd){
+.tl-item:nth-child(odd) {
   padding-right: calc(50% + 30px);
   text-align: right;
 }
 
-.tl-item:nth-child(even){
+.tl-item:nth-child(even) {
   padding-left: calc(50% + 30px);
 }
 
-.tl-dot{
+.tl-dot {
   height: 21px;
   width: 21px;
   background-color: rgba(229, 53, 30, 0.832);
-  box-shadow: 0 0 25px var(rgba(229, 53, 30, 0.832))
-              0 0 50px var(rgba(229, 53, 30, 0.832));
+  box-shadow: 0 0 25px var(rgba(229, 53, 30, 0.832)) 0 0 50px
+    var(rgba(229, 53, 30, 0.832));
   position: absolute;
   left: calc(50% - 8px);
   border-radius: 50%;
   top: 10px;
 }
 
-.tl-date{
+.tl-date {
   font-size: 20px;
   font-weight: 800;
   color: aliceblue;
   margin: 6px 0 15px;
 }
 
-.tl-content{
+.tl-content {
   background-color: #262626;
   border: 1px solid rgba(229, 53, 30, 0.832);
   padding: 30px 50px;
@@ -461,33 +459,64 @@ form .btn2{
   transition: 0.3s ease-in-out;
 }
 
-.tl-content:hover{
+.tl-content:hover {
   transform: scale(1.05);
 }
 
-.tl-content h3{
+.tl-content h3 {
   font-size: 20px;
   color: aliceblue;
   margin: 0 0 10px;
   font-weight: 500;
 }
 
-.tl-content p{
+.tl-content p {
   font-size: 16px;
   color: aliceblue;
   font-weight: 300;
   line-height: 22px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: rgba(229, 53, 30, 0.832);
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: #262626;
   width: 50px;
+}
+
+.resume-container{
+  padding-left: 40rem;
+}
+
+#resume {
+  display: none;
+}
+
+
+#resume h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 20px;
+  padding-left: 15rem;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+.resume-viewer {
+  width: 600px;
+  height: 600px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+}
+
+.resume-container btn3{
+  padding-left: 60rem;
+  z-index: 100;
 }
