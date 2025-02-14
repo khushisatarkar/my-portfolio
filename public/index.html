@@ -15,7 +15,9 @@
   <body>
     <header>
       <nav>
-        <h1 class="logo">🇰🇸</h1>
+        <a href="index.html">
+          <h1 class="logo">🇰🇸</h1>
+        </a>
         <ul class="topnav" id="mytopnav">
           <li class="nav-item">
             <a href="#home" class="nav-link active">Home</a>
@@ -79,51 +81,129 @@
         <h1 class="sub-title">My Skills</h1>
         <div class="skills-list">
           <div>
-            <i class="fa-solid fa-code"></i> 
+            <i class="fa-solid fa-code"></i>
             <h2>Software Developer</h2>
-            <p>Hands-on experience with C++, Java, Python, and databases like MySQL, MongoDB</p>
+            <p>
+              Hands-on experience with C++, Java, Python, and databases like
+              MySQL, MongoDB
+            </p>
             <a href="#">Learn more ></a>
           </div>
           <div>
             <i class="fa-solid fa-crop"></i>
             <h2>Front-end Developer</h2>
-            <p>Experience working on various front-end projects using HTML-CSS, JavaScript, ReactJS</p>
+            <p>
+              Experience working on various front-end projects using HTML-CSS,
+              JavaScript, ReactJS
+            </p>
             <a href="#">Learn more ></a>
           </div>
           <div>
             <i class="fa-solid fa-shield-halved"></i>
             <h2>Cybersecurity</h2>
-            <p>Completed an internship in SOC, gained Google Cybersecurity certificate, and have been a part of various CTFs</p>
+            <p>
+              Completed an internship in SOC, gained Google Cybersecurity
+              certificate, and have been a part of various CTFs
+            </p>
             <a href="#">Learn more ></a>
           </div>
         </div>
-        
       </div>
     </div>
 
-    <div class="contact-wrapper" id="contact">
-      <h1>My Contact</h1>
-      <section class="contact">
-        <h2>Khushi Satarkar</h2>
-        <p>
-          <i class="fa-solid fa-envelope"></i> khushisatarkar24@gmail.com<br />
-          <i class="fa-solid fa-phone"> </i>+91 72489 23987 <br><i class="fa-solid fa-location-dot"></i> Pune
-        </p>
-        <div class="social-icons">
-          <a
-            href="https://www.linkedin.com/in/khushi-satarkar-039056254/"
-            target="_blank"
-          >
-            <i
-              class="fa-brands fa-linkedin"
-              title="Let's connect on Linkedin"
-            ></i
-          ></a>
-          <a href="https://github.com/khushisatarkar" target="_blank">
-            <i class="fa-brands fa-github" title="Let's connect on Github"></i
-          ></a>
+    <div id="education">
+      <section class="education">
+        <h1 class="heading">My Education</h1>
+
+        <div class="timeline-items">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-date">March 2020</div>
+            <div class="tl-content">
+              <h3>SSC Board</h3>
+              <p>92% <br />Dnyanganga English Medium School</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2020-2022</div>
+            <div class="tl-content">
+              <h3>HSC Board</h3>
+              <p>72% <br />NMV High School and Jr College</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2022-2026</div>
+            <div class="tl-content">
+              <h3>Computer Engineering</h3>
+              <p>
+                8.3 cgpa<br />Marathwada Mitramandals Institute of Technology
+              </p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-date">Jan 2025-March 2025</div>
+            <div class="tl-content">
+              <h3>Internship</h3>
+              <p>Pune <br />Seculibrium Services and Solutions</p>
+            </div>
+          </div>
         </div>
       </section>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              khushisatarkar24@gmail.com<br />
+              <i class="fa-solid fa-phone"> </i>+91 72489 23987 <br /><i
+                class="fa-solid fa-location-dot"
+              ></i>
+              Pune
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/khushi-satarkar-039056254/"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-linkedin"
+                  title="Let's connect on Linkedin"
+                ></i
+              ></a>
+              <a href="https://github.com/khushisatarkar" target="_blank">
+                <i
+                  class="fa-brands fa-github"
+                  title="Let's connect on Github"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your E-mail"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <button id="scrollToTop" class="btn2" title="Go to top">↑</button>
