@@ -489,34 +489,3 @@ form .btn2 {
   background-color: #262626;
   width: 50px;
 }
-
-.resume-container{
-  padding-left: 40rem;
-}
-
-#resume {
-  display: none;
-}
-
-
-#resume h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  margin-top: 20px;
-  padding-left: 15rem;
-  padding-top: 10rem;
-  padding-bottom: 3rem;
-}
-
-.resume-viewer {
-  width: 600px;
-  height: 600px;
-  border: 1px solid #ccc;
-  overflow: hidden;
-  position: relative;
-}
-
-.resume-container btn3{
-  padding-left: 60rem;
-  z-index: 100;
-}
