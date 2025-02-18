@@ -5,7 +5,7 @@ Welcome to my personal portfolio!
 📌 Features
 ✔️ Fully Responsive Design
 ✔️ Smooth Scroll Navigation
-✔️ Dynamic Sections (Skills, Education, Resume, Contact)
+✔️ Dynamic Sections (Skills, Projects, Education, Contact)
 
 🛠️ Tech Stack
 Frontend: HTML, CSS, JavaScript
@@ -13,9 +13,8 @@ Frontend: HTML, CSS, JavaScript
 📂 Sections
 🔹 Home: Introduction & Links
 🔹 Skills: Technologies & Tools
+🔹 Projects: Overview of My Projects
 🔹 Education: Academic Background
-🔹 Experience: Work & Internships
-🔹 Resume: Downloadable Resume
 🔹 Contact: Social Links & Email Form
 
 📬 Contact
