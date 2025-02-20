@@ -387,6 +387,10 @@ form .btn2 {
   cursor: pointer;
 }
 
+.row .btn2{
+  margin-left: 15rem;
+}
+
 .education h1 {
   font-size: 4rem;
   font-weight: 700;
