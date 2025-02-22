@@ -465,6 +465,7 @@ form .btn2 {
 
 .tl-content:hover {
   transform: scale(1.05);
+  background-color: rgba(229, 53, 30, 0.832);
 }
 
 .tl-content h3 {
