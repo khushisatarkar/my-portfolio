@@ -290,6 +290,7 @@ ul {
 .skills-list div:hover {
   background-color: rgba(229, 53, 30, 0.832);
   transform: translateY(-10px);
+  cursor: pointer;
 }
 
 .skills-list div i {
