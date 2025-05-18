@@ -338,6 +338,103 @@ ul {
   flex-wrap: wrap;
 }
 
+#projects {
+  padding: 10rem;
+}
+
+#projects h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 50px;
+  padding-left: 5rem;
+}
+
+.projects-wrapper {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.projects-container {
+  padding-left: 10rem;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 3rem;
+  padding: 4rem 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.project-card {
+  flex: 0 0 300px;
+  background: #262626;
+  border: 1px solid rgba(229, 53, 30, 0.832);
+  border-radius: 2.5rem;
+  padding: 3rem;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.project-card:hover {
+  background-color: rgba(229, 53, 30, 0.832);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.project-card h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.project-card a {
+  color: aliceblue;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: white;
+}
+
+.projects-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.scroll-btn {
+  color: aliceblue;
+  background: none;
+  border: none;
+  font-size: 5rem;
+  /* padding: 1rem 2rem; */
+  padding-left: 5rem;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.scroll-btn:hover {
+  color: rgba(229, 53, 30, 0.832);
+  cursor: pointer;
+}
+
+.project-card i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
 #contact .container {
   padding-top: 15rem;
 }

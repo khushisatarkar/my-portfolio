@@ -46,10 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
-      navLinks.forEach((nav) => nav.classList.remove("active"));
-      this.classList.add("active");
 
-      // scroll smoothly to the target section
       const targetId = this.getAttribute("href").substring(1);
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
@@ -67,6 +64,24 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       scrollToTopButton.classList.remove("show");
     }
+
+    // Scroll-based navbar highlight
+    const sections = document.querySelectorAll("section, div[id]");
+    let currentSection = "";
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 150 && rect.bottom >= 150) {
+        currentSection = section.id;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSection}`) {
+        link.classList.add("active");
+      }
+    });
   });
 
   scrollToTopButton.addEventListener("click", () => {
@@ -79,11 +94,26 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector('.nav-link[href="#home"]').classList.add("active");
     }, 500);
   });
-  
+
   // scroll to top on refresh
   window.addEventListener("load", function () {
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 100);
   });
+
+  // project section: horizontal scroll buttons
+  const scrollContainer = document.getElementById("scrollableProjects");
+  const scrollLeftBtn = document.getElementById("scrollLeft");
+  const scrollRightBtn = document.getElementById("scrollRight");
+
+  if (scrollContainer && scrollLeftBtn && scrollRightBtn) {
+    scrollLeftBtn.addEventListener("click", () => {
+      scrollContainer.scrollBy({ left: -350, behavior: "smooth" });
+    });
+
+    scrollRightBtn.addEventListener("click", () => {
+      scrollContainer.scrollBy({ left: 350, behavior: "smooth" });
+    });
+  }
 });
