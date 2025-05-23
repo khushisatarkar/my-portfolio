@@ -362,7 +362,9 @@ ul {
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: 3rem;
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  padding-left: 0;
   scrollbar-width: none; /* Firefox */
 }
 
@@ -411,7 +413,7 @@ ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
 }
 
 .scroll-btn {
@@ -419,6 +421,7 @@ ul {
   background: none;
   border: none;
   font-size: 5rem;
+  height: 100%;
   /* padding: 1rem 2rem; */
   padding-left: 5rem;
   border-radius: 50%;
