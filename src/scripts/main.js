@@ -71,14 +71,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      if (rect.top <= 150 && rect.bottom >= 150) {
-        currentSection = section.id;
+      if (
+        rect.top <= window.innerHeight / 2 &&
+        rect.bottom >= window.innerHeight / 2
+      ) {
+        current = section.getAttribute("id");
       }
     });
 
     navLinks.forEach((link) => {
       link.classList.remove("active");
-      if (link.getAttribute("href") === `#${currentSection}`) {
+      if (link.getAttribute("href") === `#${current}`) {
         link.classList.add("active");
       }
     });
