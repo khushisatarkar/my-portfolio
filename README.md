@@ -45,10 +45,15 @@ Frontend: HTML, CSS, JavaScript
 ![Contact Me](./src/output/5-contactme.png)
 *Contact form for quick reach*
 
+## 📱 Mobile Compatibility
+
+Mobile responsiveness is currently in progress. Future updates will ensure full support across all devices.
+
 ## 🔗 Hosted URL
 
 You can visit the live website here:  
 👉 [[https://your-project-id.web.app](https://my-portfolio-57985.web.app/)]
+
 
 ## 📬 Connect with me: 
 Feel free to reach out to me at:
