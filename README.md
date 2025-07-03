@@ -3,11 +3,11 @@
 Welcome to my personal portfolio!
 
 ## 📌 Features: 
-✔️ Fully Responsive Design
+- Fully Responsive Design
 
-✔️ Smooth Scroll Navigation
+- Smooth Scroll Navigation
 
-✔️ Dynamic Sections (Skills, Projects, Education, Contact)
+- Dynamic Sections (Skills, Projects, Education, Contact)
 
 ## 🛠️ Tech Stack: 
 Frontend: HTML, CSS, JavaScript
@@ -45,6 +45,10 @@ Frontend: HTML, CSS, JavaScript
 ![Contact Me](./src/output/5-contactme.png)
 *Contact form for quick reach*
 
+## 🔗 Hosted URL
+
+You can visit the live website here:  
+👉 [[https://your-project-id.web.app](https://my-portfolio-57985.web.app/)]
 
 ## 📬 Connect with me: 
 Feel free to reach out to me at:
